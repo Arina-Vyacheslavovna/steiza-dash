@@ -1,0 +1,117 @@
+@media (min-width: 1440px) {
+  .side-menu li {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .side-menu {
+    width: 280px;
+  }
+
+  .container {
+    padding-left: 250px;
+  }
+}
+
+@media (min-width: 1099px) and (max-width: 1439px) {
+  .side-menu {
+    width: 200px;
+  }
+  .side-menu li {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .side-menu {
+    width: 200px;
+  }
+  .side-menu li {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .graphBox {
+    flex-direction: column;
+  }
+
+  .container {
+    padding-left: 200px;
+  }
+
+  .col:first-child,
+  .col:last-child {
+    width: 100%;
+  }
+  .col:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .side-menu {
+    width: 120px;
+  }
+  .side-menu li {
+    justify-content: center;
+  }
+  .side-menu li span {
+    display: none;
+  }
+  .side-menu li img {
+    width: 40px;
+    height: 40px;
+  }
+  .container {
+    padding-left: 120px;
+  }
+  .box li {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 668px) {
+  .side-menu {
+    width: 100px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .card p,
+  .card button {
+    font-size: 14px;
+  }
+  .side-menu li img {
+    width: 30px;
+    height: 30px;
+  }
+  .box {
+    width: 100%;
+  }
+  .nav {
+    justify-content: end;
+  }
+  .container {
+    padding-left: 90px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .box li {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 475px) {
+  html {
+    width: 475px;
+  }
+}

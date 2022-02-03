@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+h1 {
+  color: #444;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.side-menu {
+  position: fixed;
+  background: #5da9ff;
+  width: 200px;
+  height: 100vh;
+  z-index: 2;
+}
+
+.brand-name {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-menu li {
+  cursor: pointer;
+  font-size: 22px;
+  padding: 20px 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.side-menu li:hover {
+  background: white;
+  color: #444;
+  transition: 0.5s;
+}
+
+li.active {
+  background: white;
+  color: #444;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  /* padding: 20px 0 20px 100px; */
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 0px 10px 8px -7px rgba(68, 68, 68, 0.267);
+  z-index: 1;
+}
+
+.nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.search {
+  /* flex: 3; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+
+.search input[type='text'] {
+  border: none;
+  background: #ffffff;
+  padding: 10px;
+  width: 70%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #5da9ff;
+  border-right: none;
+}
+
+.search button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  border: 2px solid #5da9ff;
+  transition: 0.5s;
+}
+
+.search button:hover {
+  background-color: #5da9ff;
+  transition: 0.5s;
+}
+
+.search img {
+  width: 30px;
+  height: 30px;
+}
+
+.user {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+}
+
+.img-case {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.img-case img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-top: 120px;
+  padding-left: 200px;
+}
+
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 200px;
+}
+
+.box {
+  position: relative;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin: 10px 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col:first-child {
+  width: 60%;
+}
+
+.col:last-child {
+  width: 30%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.boxNav {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.date {
+  border-radius: 10px;
+}
+
+.box li {
+  padding: 20px;
+  cursor: pointer;
+  align-self: stretch;
+  text-align: center;
+  width: 16.66%;
+}
+
+.box li:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.box li:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.box li:hover,
+.activeDate {
+  background: #5da9ff;
+  color: white;
+}
+
+.card {
+  justify-content: space-between;
+  width: 50%;
+  color: #444;
+}
+
+.card:first-child {
+  background: rgb(255, 255, 214);
+}
+
+.card:last-child {
+  background: rgb(244, 226, 255);
+}
+
+h3,
+.card p {
+  margin-bottom: 20px;
+}
+
+.card:first-child button {
+  padding: 10px;
+  background: rgb(252, 252, 187);
+  border: 1px solid rgb(255, 255, 140);
+}
+
+.card:first-child button:hover {
+  background: rgb(255, 255, 140);
+  transition: 0.5s;
+}
+
+.card:last-child button {
+  padding: 10px;
+  background: rgb(235, 203, 255);
+  border: 1px solid rgb(232, 195, 255);
+}
+
+.card:last-child button:hover {
+  background: rgb(232, 195, 255);
+  transition: 0.5s;
+}
+
+.card button {
+  cursor: pointer;
+}
